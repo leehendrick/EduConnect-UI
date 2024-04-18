@@ -1,75 +1,39 @@
-# Nuxt 3 Minimal Starter
+# EduConnect-ui
+Integrated Education System
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+EduConnect is a comprehensive school website designed to integrate an online school secretary, student progress monitoring, forums, and access to educational materials, all while prioritizing seamless communication at a distance. With a user-friendly interface, it serves as a centralized hub for students, teachers, and administrative staff, fostering a collaborative and efficient educational environment.
 
-## Setup
+## Table of Contents
 
-Make sure to install the dependencies:
+- [About](#about)
+- [Installation](#installation)
+- [License](#license)
+
+## About
+* Online School Secretary : Streamline administrative tasks with an intuitive online secretary, allowing staff to manage schedules, student records, and other essential administrative functions efficiently.
+
+* Student Progress Monitoring: Empower educators with tools to monitor student progress effectively, providing insights into academic performance and enabling tailored support where needed.
+
+* Forums: Foster a sense of community and collaboration among students and teachers through discussion forums, facilitating peer-to-peer learning and academic discourse.
+
+* Access to Educational Materials: Provide students with easy access to a vast repository of educational materials, including textbooks, lecture notes, and supplementary resources, enhancing their learning experience.
+
+* Seamless Communication: Facilitate seamless communication between students, teachers, and staff, offering features such as announcements to ensure effective collaboration and support, even at a distance.
+## Installation
+
+For the installation to work as expected you need to have the latest version of nodejs and npm installed
 
 ```bash
-# npm
+# Clone the repository
+git clone https://github.com/leehendrick/Edu-Connect-ui.git
+
+# Navigate to the project directory
+cd Edu-Connect-ui
+
+# Install dependencies
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## License
+ImptelConnect is licensed under the [MIT license](https://opensource.org/licenses/MIT), empowering users with the freedom to use, modify, and distribute the software for any purpose, subject to the terms of the license agreement.
