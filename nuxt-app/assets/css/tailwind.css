@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Estilos adicionais */
+.separator {
+    border-left: 1px solid #d1d5db;
+    height: 30px;
+}
+
+.content-separator {
+    border-top: 1px solid #d1d5db;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+.typed-text {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;  /*Keeps the content on a single line */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+    font-size: 4rem;
+    overflow-wrap: break-word;
+}
