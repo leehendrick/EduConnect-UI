@@ -2,6 +2,9 @@
 export default {
   content: [],
   theme: {
+    fontFamily: {
+      'san-francisco': ['San Francisco', 'Arial', 'sans-serif'],
+    },
     extend: {
       colors: {
         primary: '#BF0F0F',
