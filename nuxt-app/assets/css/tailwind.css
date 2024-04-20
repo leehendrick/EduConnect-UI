@@ -38,3 +38,9 @@
     font-size: 4rem;
     overflow-wrap: break-word;
 }
+
+@font-face {
+    font-family: 'San Francisco';
+    src: url('/nuxt-app/assets/fonts/SanFrancisco-Regular.ttf') format('truetype');
+    /* Adicione variações (bold, italic, etc.) conforme necessário */
+}
