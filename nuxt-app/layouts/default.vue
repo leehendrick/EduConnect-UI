@@ -9,3 +9,4 @@
 import Header from "~/pages/components/header.vue";
 import Footer from "~/pages/components/footer.vue";
 </script>
+
