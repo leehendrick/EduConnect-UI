@@ -17,9 +17,9 @@
             <div class="py-24 sm:py-32">
               <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto max-w-2xl text-center font-san-francisco lg:text-left lg:ml-0 overflow-hidden">
-                  <h1 class="typed-text  font-bold tracking-tight text-primary  sm:text-6xl">Surpreenda-se </h1>
-                  <h1 class="typed-text  font-bold tracking-tight text-primary sm:text-6xl">com o aprendizado no</h1>
-                  <h1 class="typed-text  font-bold tracking-tight text-primary sm:text-6xl">IMPTEL</h1>
+                  <h1 class="typed-text  font-extrabold tracking-tight text-primary  sm:text-6xl">Surpreenda-se </h1>
+                  <h1 class="typed-text  font-extrabold tracking-tight text-primary sm:text-6xl">com o aprendizado no</h1>
+                  <h1 class="typed-text  font-extrabold tracking-tight text-primary sm:text-6xl">IMPTEL</h1>
 
                   <p class="mt-6 text-lg leading-8 font-san-francisco text-black">Explore um mundo de aprendizado <strong> emocionante e surpreendente no IMPTEL</strong>, onde cada descoberta é uma jornada de alegria e crescimento!</p>
                   <div class="mt-10 flex items-center justify-center gap-x-6">
@@ -36,7 +36,7 @@
       <div class="w-full h-full relative overflow-hidden">
         <img src="/tela2.svg" alt="" class="border-none border-0 ">
         <div class="absolute inset-0 md:-top-16 lg:-top-28 flex flex-col justify-center items-center">
-          <div class="relative  text-4xl font-bold text-white mb-10">
+          <div class="relative  text-4xl font-extrabold text-white mb-10">
             Cursos Ministrados
             <hr class="bg-white mt-3  h-1 relative rounded-2xl"/>
           </div>
@@ -113,7 +113,6 @@
           </div>
         </div>
       </div>
-
 
     </div>
 
