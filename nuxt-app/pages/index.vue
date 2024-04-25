@@ -126,6 +126,15 @@
         </div>
       </div>
 
+      <div class="bg-gray-100 py-8 md:py-12 lg:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center border-t border-primary">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl mt-10">Quadro de Honra</h2>
+            <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Conheça nossos alunos de destaque.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </main>
