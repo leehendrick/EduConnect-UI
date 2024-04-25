@@ -28,14 +28,14 @@ function toggle(status: number){
           </svg>
         </button>
       </div>
-      <div class="hidden lg:flex lg:gap-x-12 font-san-francisco bold">
+      <div class="hidden lg:flex lg:gap-x-12 text-lg">
         <a href="#" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Home</a>
         <a href="#" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Features</a>
         <a href="#" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Marketplace</a>
         <a href="#" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Company</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class=" font-bold leading-6 hover:text-primary transition duration-300 ease-in-out">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="#" class=" font-extrabold text-lg leading-6 hover:text-primary transition duration-300 ease-in-out">Log in <span aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
