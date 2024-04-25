@@ -39,25 +39,6 @@
     overflow-wrap: break-word;
 }
 
-@font-face {
-    font-family: 'San Francisco';
-    src: url('/nuxt-app/assets/fonts/SanFrancisco-Regular.ttf') format('truetype');
-    /* Adicione variações (bold, italic, etc.) conforme necessário */
-}
 
-[data-scroll="bottom-to-top"] {
-    opacity: 0; /* Inicialmente, o texto está invisível */
-    transform: translateY(50px); /* Define a posição inicial do texto */
-}
 
-@keyframes bottomToTop {
-    from {
-        opacity: 0;
-        transform: translateY(50px); /* Define a posição inicial do texto */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); /* Define a posição final do texto */
-    }
-}
 
