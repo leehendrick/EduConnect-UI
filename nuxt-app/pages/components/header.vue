@@ -35,7 +35,7 @@ function toggle(status: number){
           <router-link to="" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Company</router-link>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class=" font-extrabold text-lg leading-6 hover:text-primary transition duration-300 ease-in-out">Log in <span aria-hidden="true">&rarr;</span></a>
+        <router-link href="#" class=" font-extrabold text-lg leading-6 hover:text-primary transition duration-300 ease-in-out" to="/login">Log in <span aria-hidden="true">&rarr;</span></router-link>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
