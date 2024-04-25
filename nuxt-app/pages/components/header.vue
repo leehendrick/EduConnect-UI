@@ -29,10 +29,10 @@ function toggle(status: number){
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12 text-lg">
-        <a href="#" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Home</a>
-        <a href="#" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Features</a>
-        <a href="#" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Marketplace</a>
-        <a href="#" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Company</a>
+        <router-link to="" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Home</router-link>
+          <router-link to="" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Features</router-link>
+          <router-link to="" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Marketplace</router-link>
+          <router-link to="" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Company</router-link>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="#" class=" font-extrabold text-lg leading-6 hover:text-primary transition duration-300 ease-in-out">Log in <span aria-hidden="true">&rarr;</span></a>
