@@ -77,13 +77,13 @@
       <div class="bg-gray-100 py-8 md:py-12 lg:py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center">
-            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">Notas Informativas</h2>
+            <h2 class="text-3xl font-extrabold sm:text-4xl lg:text-5xl text-primary">Notas Informativas</h2>
             <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Confira nossas últimas atualizações e informações importantes.</p>
           </div>
           <div class="mt-10">
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               <!-- Nota Informativa 1 -->
-              <div class="bg-white overflow-hidden shadow rounded-lg">
+              <div class="bg-white overflow-hidden shadow rounded-lg border-2 border-primary">
                 <div class="px-4 py-5 sm:p-6">
                   <h3 class="text-lg font-medium text-gray-900">Atualização do Curso</h3>
                   <div class="mt-2 text-sm text-gray-600">
@@ -92,7 +92,7 @@
                 </div>
               </div>
               <!-- Nota Informativa 2 -->
-              <div class="bg-white overflow-hidden shadow rounded-lg">
+              <div class="bg-white overflow-hidden shadow rounded-lg border-2 border-primary">
                 <div class="px-4 py-5 sm:p-6">
                   <h3 class="text-lg font-medium text-gray-900">Evento Online</h3>
                   <div class="mt-2 text-sm text-gray-600">
@@ -101,7 +101,7 @@
                 </div>
               </div>
               <!-- Nota Informativa 3 -->
-              <div class="bg-white overflow-hidden shadow rounded-lg">
+              <div class="bg-white overflow-hidden shadow rounded-lg border-2 border-primary">
                 <div class="px-4 py-5 sm:p-6">
                   <h3 class="text-lg font-medium text-gray-900">Recursos Extras</h3>
                   <div class="mt-2 text-sm text-gray-600">
