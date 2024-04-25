@@ -47,7 +47,7 @@
                 <!-- Divisão 1 -->
                 <div class="w-full md:w-1/2 p-4">
                   <div class="rounded-lg shadow-md p-6 border-2 hover:border-secondary" data-scroll="bottom-to-top">
-                    <h2 class="text-lg font-semibold mb-2">Electrónica e Telecomunicações</h2>
+                    <h2 class="text-lg font-extrabold mb-2">Electrónica e Telecomunicações</h2>
                     <p>
                       Descubra os segredos dos circuitos eletrônicos, mergulhe na complexidade das telecomunicações ou explore as maravilhas da informática. Nossa equipe de especialistas está aqui para guiá-lo em cada passo do caminho, garantindo uma experiência de aprendizado envolvente e gratificante.
                     </p>
@@ -56,7 +56,7 @@
                 <!-- Divisão 2 -->
                 <div class="w-full md:w-1/2 p-4">
                   <div class="rounded-lg shadow-md p-6 border-2 hover:border-green-600" data-scroll="bottom-to-top">
-                    <h2 class="text-lg font-semibold mb-2">Informática</h2>
+                    <h2 class="text-lg font-extrabold mb-2">Informática</h2>
                     <p>
                       Explore o poder dos algoritmos, mergulhe na criação de aplicativos inovadores e domine as habilidades essenciais para se destacar neste campo dinâmico e em constante evolução. Com uma abordagem prática e orientação especializada, estamos aqui para ajudá-lo a alcançar seus objetivos e conquistar novos horizontes na área da informática.
                     </p>
