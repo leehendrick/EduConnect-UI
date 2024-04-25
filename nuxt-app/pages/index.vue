@@ -14,8 +14,8 @@
           <div class="bg-opacity-50 p-6  w-full h-full object-cover">
             <div class="py-24 sm:py-32">
               <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <div class="mx-auto max-w-2xl text-center font-san-francisco     lg:text-left lg:ml-0 overflow-hidden">
-                  <h1 class="typed-text  font-bold tracking-tight text-primary sm:text-6xl">Surpreenda-se </h1>
+                <div class="mx-auto max-w-2xl text-center font-san-francisco lg:text-left lg:ml-0 overflow-hidden">
+                  <h1 class="typed-text  font-bold tracking-tight text-primary  sm:text-6xl">Surpreenda-se </h1>
                   <h1 class="typed-text  font-bold tracking-tight text-primary sm:text-6xl">com o aprendizado no</h1>
                   <h1 class="typed-text  font-bold tracking-tight text-primary sm:text-6xl">IMPTEL</h1>
 
@@ -33,7 +33,7 @@
 
       <div class="w-full h-full relative overflow-hidden">
         <img src="/tela2.svg" alt="" class="border-none border-0 ">
-        <div class="absolute inset-0 -top-28 flex flex-col justify-center items-center">
+        <div class="absolute inset-0 md:-top-16 lg:-top-28 flex flex-col justify-center items-center">
           <div class="relative  text-4xl font-bold text-white mb-10">
             Cursos Ministrados
             <hr class="bg-white mt-3  h-1 relative rounded-2xl"/>
@@ -44,16 +44,20 @@
               <div class="flex flex-wrap">
                 <!-- Divisão 1 -->
                 <div class="w-full md:w-1/2 p-4">
-                  <div class=" rounded-lg shadow-md p-6 border-2">
-                    <h2 class="text-lg font-semibold mb-2">Divisão 1</h2>
-                    <p>Conteúdo da Divisão 1 aqui...</p>
+                  <div class=" rounded-lg shadow-md p-6 border-2 hover:border-secondary ">
+                    <h2 class="text-lg font-semibold mb-2">Electrónica e Telecomunicações</h2>
+                    <p>
+                      Descubra os segredos dos circuitos eletrônicos, mergulhe na complexidade das telecomunicações ou explore as maravilhas da informática. Nossa equipe de especialistas está aqui para guiá-lo em cada passo do caminho, garantindo uma experiência de aprendizado envolvente e gratificante.
+                    </p>
                   </div>
                 </div>
                 <!-- Divisão 2 -->
                 <div class="w-full md:w-1/2 p-4">
-                  <div class=" rounded-lg shadow-md p-6 border-2">
-                    <h2 class="text-lg font-semibold mb-2">Divisão 2</h2>
-                    <p>Conteúdo da Divisão 2 aqui...</p>
+                  <div class=" rounded-lg shadow-md p-6 border-2 hover:border-green-600">
+                    <h2 class="text-lg font-semibold mb-2">Informática</h2>
+                    <p>
+                      Explore o poder dos algoritmos, mergulhe na criação de aplicativos inovadores e domine as habilidades essenciais para se destacar neste campo dinâmico e em constante evolução. Com uma abordagem prática e orientação especializada, estamos aqui para ajudá-lo a alcançar seus objetivos e conquistar novos horizontes na área da informática.
+                    </p>
                   </div>
                 </div>
               </div>
