@@ -60,8 +60,8 @@
       </div>
 
       <!-- Content section -->
-      <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
-        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+      <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8 border-primary border-t-2">
+        <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none mt-10">
           <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our mission</h2>
           <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div class="lg:w-full lg:max-w-2xl lg:flex-auto">
@@ -70,7 +70,7 @@
             <div class="lg:flex lg:flex-auto lg:justify-center">
               <dl class="w-64 space-y-8 xl:w-80">
                 <div v-for="stat in stats" :key="stat.label" class="flex flex-col-reverse gap-y-4">
-                  <dt class="text-base leading-7 text-primary">{{ stat.label }}</dt>
+                  <dt class="text-base leading-7 text-gray-700">{{ stat.label }}</dt>
                   <dd class="text-5xl font-semibold tracking-tight text-primary">{{ stat.value }}</dd>
                 </div>
               </dl>
@@ -80,8 +80,8 @@
       </div>
 
       <!-- Values section -->
-      <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:mx-0">
+      <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8 border-primary border-t-2">
+        <div class="mx-auto max-w-2xl lg:mx-0 mt-10">
           <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our values</h2></div>
         <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div v-for="value in values" :key="value.name">
@@ -92,8 +92,8 @@
       </div>
 
       <!-- Team section -->
-      <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:mx-0">
+      <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8 border-primary border-t-2">
+        <div class="mx-auto max-w-2xl lg:mx-0 mt-10">
           <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Our team</h2>
           <p class="mt-6 text-lg leading-8 text-gray-600">Sit facilis neque ab nulla vel. Cum eos in laudantium. Temporibus eos totam in dolorum. Nemo vel facere repellendus ut eos dolores similique.</p>
         </div>
@@ -118,9 +118,9 @@ const navigation = [
   { name: 'Company', href: '#' },
 ]
 const stats = [
-  { label: 'Transactions every 24 hours', value: '44 million' },
-  { label: 'Assets under holding', value: '$119 trillion' },
-  { label: 'New users annually', value: '46,000' },
+  { label: 'Alunos que já se formaram no IMPTEL', value: '+500' },
+  { label: 'Alunos matriculados.', value: '+700' },
+  { label: 'Novos alunos, ansiosos para iniciar sua jornada educacional conosco.', value: '+200' },
 ]
 const values = [
 
