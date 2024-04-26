@@ -29,9 +29,9 @@ function toggle(status: number){
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12 text-lg">
-        <router-link to="" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Home</router-link>
-          <router-link to="" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Inscrições</router-link>
-          <router-link to="" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Sobre</router-link>
+        <router-link to="/" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Home</router-link>
+          <router-link to="/inscricoes" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Inscrições</router-link>
+          <router-link to="/sobre" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Sobre</router-link>
           <router-link to="/contatos" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Contatos</router-link>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -74,5 +74,7 @@ function toggle(status: number){
 </template>
 
 <style scoped>
-
+  .router-link-exact-active{
+    @apply text-primary
+  }
 </style>
