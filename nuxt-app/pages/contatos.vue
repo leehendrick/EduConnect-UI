@@ -39,8 +39,8 @@
                   <div class="ml-4 mb-4">
                     <h3 class="mb-2 text-lg font-medium leading-6">Our Address
                     </h3>
-                    <p class="">1230 Maecenas Street Donec Road</p>
-                    <p class="">New York, EEUU</p>
+                    <p class="">IMPTEL I - Camama</p>
+                    <p class="">IMPTEL II - Vila de Viana</p>
                   </div>
                 </li>
                 <li class="flex">
