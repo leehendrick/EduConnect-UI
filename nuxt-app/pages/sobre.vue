@@ -62,7 +62,7 @@
       <!-- Content section -->
       <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
         <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our mission</h2>
+          <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our mission</h2>
           <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div class="lg:w-full lg:max-w-2xl lg:flex-auto">
               <p class="text-xl leading-8 text-gray-600">No IMPTEL, nossa missão é capacitar os jovens a atingirem seu pleno potencial, fornecendo uma educação de qualidade que promova o pensamento crítico, a criatividade e a responsabilidade social. Buscamos inspirar uma paixão pelo aprendizado e preparar nossos alunos para os desafios do mundo em constante evolução.</p>
@@ -70,8 +70,8 @@
             <div class="lg:flex lg:flex-auto lg:justify-center">
               <dl class="w-64 space-y-8 xl:w-80">
                 <div v-for="stat in stats" :key="stat.label" class="flex flex-col-reverse gap-y-4">
-                  <dt class="text-base leading-7 text-gray-600">{{ stat.label }}</dt>
-                  <dd class="text-5xl font-semibold tracking-tight text-gray-900">{{ stat.value }}</dd>
+                  <dt class="text-base leading-7 text-primary">{{ stat.label }}</dt>
+                  <dd class="text-5xl font-semibold tracking-tight text-primary">{{ stat.value }}</dd>
                 </div>
               </dl>
             </div>
@@ -82,7 +82,7 @@
       <!-- Values section -->
       <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our values</h2></div>
+          <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Our values</h2></div>
         <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div v-for="value in values" :key="value.name">
             <dt class="font-semibold text-gray-900">{{ value.name }}</dt>
@@ -94,7 +94,7 @@
       <!-- Team section -->
       <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our team</h2>
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Our team</h2>
           <p class="mt-6 text-lg leading-8 text-gray-600">Sit facilis neque ab nulla vel. Cum eos in laudantium. Temporibus eos totam in dolorum. Nemo vel facere repellendus ut eos dolores similique.</p>
         </div>
         <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
