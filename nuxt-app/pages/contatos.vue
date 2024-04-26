@@ -9,20 +9,15 @@
           <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
             <h2
               class="font-heading mb-4 font-bold tracking-tight text-primary  text-3xl sm:text-5xl">
-              Get in Touch
+              Fale Connosco
             </h2>
-            <p class="mx-auto mt-4 max-w-3xl text-xl ">In hac habitasse platea
-              dictumst
-            </p>
           </div>
         </div>
         <div class="flex items-stretch justify-center">
           <div class="grid md:grid-cols-2">
             <div class="h-full pr-6">
               <p class="mt-3 mb-12 text-lg ">
-                Class aptent taciti sociosqu ad
-                litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque
-                sagittis ante, ac tincidunt sem venenatis ut.
+                Estamos aqui para ouvir você! Se você tiver alguma dúvida, comentário ou gostaria de saber mais sobre o IMPTEL, não hesite em entrar em contato conosco. Nossa equipe dedicada está pronta para ajudar e responder a todas as suas perguntas. Você pode nos contatar por telefone, e-mail ou preenchendo o formulário de contato abaixo. Estamos ansiosos para falar com você!
               </p>
               <ul class="mb-6 md:mb-0">
                 <li class="flex">
