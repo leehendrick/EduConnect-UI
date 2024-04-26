@@ -74,8 +74,7 @@
                   <div class="ml-4 mb-4">
                     <h3 class="mb-2 text-lg font-medium leading-6">Working
                       hours</h3>
-                    <p class="">Monday - Friday: 08:00 - 17:00</p>
-                    <p class="">Saturday &amp; Sunday: 08:00 - 12:00</p>
+                    <p class="">Monday - Friday: 08:00 - 15:00</p>
                   </div>
                 </li>
               </ul>
