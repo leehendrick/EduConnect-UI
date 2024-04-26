@@ -58,8 +58,8 @@
                   <div class="ml-4 mb-4">
                     <h3 class="mb-2 text-lg font-medium leading-6">Contact
                     </h3>
-                    <p class="">Mobile: +1 (123) 456-7890</p>
-                    <p class="">Mail: tailnext@gmail.com</p>
+                    <p class="">Mobile: +244 943 529 061</p>
+                    <p class="">Mail: imptel.angola@gmail.com</p>
                   </div>
                 </li>
                 <li class="flex">
