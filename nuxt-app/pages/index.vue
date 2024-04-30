@@ -1,6 +1,6 @@
 
 <script setup>
-  const notasInformativas = [
+  const notasInformativas = ref([
     {
       title:  'Atualização do Curso',
       content: 'Novo conteúdo adicionado ao curso de Eletrônica e Telecomunicações! Não perca as últimas novidades.',
@@ -13,7 +13,7 @@
       title:  'Recursos Extras',
       content: 'Novos materiais de estudo disponíveis para download gratuito! Aproveite essa oportunidade.',
     }
-  ]
+  ])
 </script>
 
 <template>
