@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { EnvelopeIcon, KeyIcon } from '@heroicons/vue/20/solid'
+
   definePageMeta({
     layout: 'nolayout',
   })
@@ -7,25 +9,31 @@
 <template>
   <template>
     <div class="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
-      <div class="sm:mx-auto sm:w-full sm:max-w-md">
-        <img class="mx-auto h-10 w-auto" src="/IMPTEL.svg" alt="Your Company" />
-        <h2 class="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
-      </div>
 
-      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
-        <div class="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
+      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px] border rounded">
+        <div class="sm:mx-auto sm:w-full sm:max-w-md p-2">
+          <img class="mx-auto h-10 w-auto" src="/IMPTEL.svg" alt="Your Company" />
+          <h2 class="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
+        </div>
+        <div class="bg-white px-6 py-12 sm:rounded-lg sm:px-12">
           <form class="space-y-6" action="#" method="POST">
             <div>
-              <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
-              <div class="mt-2">
-                <input id="email" name="email" type="email" autocomplete="email" required="" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1  placeholder:text-gray-400 focus:ring-2 ring-gray-300 focus:ring-black sm:text-sm sm:leading-6" />
+              <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+              <div class="relative mt-2 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                  <EnvelopeIcon class="h-5 w-5 text-gray-400" aria-hidden="true" />
+                </div>
+                <input type="email" name="email" id="email" class="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2  sm:text-sm sm:leading-6" placeholder="you@example.com" />
               </div>
             </div>
 
             <div>
               <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
-              <div class="mt-2">
-                <input id="password" name="password" type="password" autocomplete="current-password" required="" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-black sm:text-sm sm:leading-6" />
+              <div class="relative mt-2 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                  <KeyIcon class="h-5 w-5 text-gray-400" aria-hidden="true" />
+                </div>
+                <input type="password" name="password" id="password" class="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2  sm:text-sm sm:leading-6"/>
               </div>
             </div>
 
@@ -45,9 +53,6 @@
             </div>
           </form>
 
-          <div>
-
-            </div>
           </div>
         </div>
 
