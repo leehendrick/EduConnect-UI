@@ -1,6 +1,19 @@
 
 <script setup>
-
+  const notasInformativas = [
+    {
+      title:  'Atualização do Curso',
+      content: 'Novo conteúdo adicionado ao curso de Eletrônica e Telecomunicações! Não perca as últimas novidades.',
+    },
+    {
+      title:  'Evento Online',
+      content: 'Junte-se a nós no próximo webinar sobre Inteligência Artificial na Informática. Inscreva-se agora!',
+    },
+    {
+      title:  'Recursos Extras',
+      content: 'Novos materiais de estudo disponíveis para download gratuito! Aproveite essa oportunidade.',
+    }
+  ]
 </script>
 
 <template>
@@ -94,30 +107,12 @@
           </div>
           <div class="mt-10">
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <!-- Nota Informativa 1 -->
-              <div class="bg-white overflow-hidden shadow rounded-lg border-2 border-primary">
+              <!-- Nota Informativa -->
+              <div  v-for="item in notasInformativas" class="bg-white overflow-hidden shadow rounded-lg border-2 border-primary">
                 <div class="px-4 py-5 sm:p-6">
-                  <h3 class="text-lg font-medium text-gray-900">Atualização do Curso</h3>
+                  <h3 class="text-lg font-medium text-gray-900">{{item.title}}</h3>
                   <div class="mt-2 text-sm text-gray-600">
-                    <p>Novo conteúdo adicionado ao curso de Eletrônica e Telecomunicações! Não perca as últimas novidades.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Nota Informativa 2 -->
-              <div class="bg-white overflow-hidden shadow rounded-lg border-2 border-primary">
-                <div class="px-4 py-5 sm:p-6">
-                  <h3 class="text-lg font-medium text-gray-900">Evento Online</h3>
-                  <div class="mt-2 text-sm text-gray-600">
-                    <p>Junte-se a nós no próximo webinar sobre Inteligência Artificial na Informática. Inscreva-se agora!</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Nota Informativa 3 -->
-              <div class="bg-white overflow-hidden shadow rounded-lg border-2 border-primary">
-                <div class="px-4 py-5 sm:p-6">
-                  <h3 class="text-lg font-medium text-gray-900">Recursos Extras</h3>
-                  <div class="mt-2 text-sm text-gray-600">
-                    <p>Novos materiais de estudo disponíveis para download gratuito! Aproveite essa oportunidade.</p>
+                    <p>{{item.content}}</p>
                   </div>
                 </div>
               </div>
