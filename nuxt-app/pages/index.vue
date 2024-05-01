@@ -16,7 +16,25 @@
   ])
   const quandroHonra = ref([
     {
-
+      nomeAluno: 'Aline Lourenço',
+      curso: 'Eléctronica e Telecomunicações',
+      classe: '10ª classe',
+      disciplinas: 'Matemática, Física',
+      img: '/honra.jpg'
+    },
+    {
+      nomeAluno: 'Claudeth Luvumbua',
+      curso: 'Eléctronica e Telecomunicações',
+      classe: '12ª classe',
+      disciplinas: 'Matemática, Física',
+      img: '/honra.jpg'
+    },
+    {
+      nomeAluno: 'Vilma Muafunga',
+      curso: 'Informática',
+      classe: '12ª classe',
+      disciplinas: 'Química, Física',
+      img: '/honra.jpg'
     }
   ])
 </script>
@@ -133,45 +151,17 @@
             <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Conheça nossos alunos de destaque.</p>
             <div class="flex flex-wrap justify-center">
               <!-- Aluno 1 -->
-              <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+              <div class="w-full md:w-1/2 lg:w-1/3 p-4" v-for="items in quandroHonra">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <img class="w-full h-auto" src="" alt="Imagem do Aluno 1">
+                  <img class="w-full h-auto" :src="items.img" alt="Imagem do Aluno 1">
                   <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Nome do Aluno 1</h3>
-                    <p class="text-sm text-gray-600 mb-2">Curso: Curso do Aluno 1</p>
-                    <p class="text-sm text-gray-600 mb-2">Turma: Turma do Aluno 1</p>
-                    <p class="text-sm text-gray-600 mb-2">Disciplinas: Turma do Aluno 1</p>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2"><strong>Nome:</strong> {{ items.nomeAluno }}</h3>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Curso:</strong> {{ items.curso }}</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Classe:</strong> {{ items.classe }}</p>
+                    <p class="text-sm text-gray-600 mb-2"><strong>Disciplinas:</strong> {{ items.disciplinas }}</p>
                   </div>
                 </div>
               </div>
-
-              <!-- Aluno 2 -->
-              <div class="w-full md:w-1/2 lg:w-1/3 p-4">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <img class="w-full h-auto" src="" alt="Imagem do Aluno 2">
-                  <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Nome do Aluno 2</h3>
-                    <p class="text-sm text-gray-600 mb-2">Curso: Curso do Aluno 2</p>
-                    <p class="text-sm text-gray-600 mb-2">Turma: Turma do Aluno 2</p>
-                    <p class="text-sm text-gray-600 mb-2">Disciplinas: Turma do Aluno 1</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Aluno 3 -->
-              <div class="w-full md:w-1/2 lg:w-1/3 p-4">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <img class="w-full h-auto" src="/honra.jpg" alt="Imagem do Aluno 3">
-                  <div class="p-4">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Nome do Aluno 3</h3>
-                    <p class="text-sm text-gray-600 mb-2">Curso: Curso do Aluno 3</p>
-                    <p class="text-sm text-gray-600 mb-2">Turma: Turma do Aluno 3</p>
-                    <p class="text-sm text-gray-600 mb-2">Disciplinas: Turma do Aluno 1</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Adicione mais alunos conforme necessário -->
 
             </div>
 
