@@ -91,21 +91,6 @@
           </div>
         </dl>
       </div>
-
-      <!-- Team section -->
-      <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8 border-primary border-t-2">
-        <div class="mx-auto max-w-2xl lg:mx-0 mt-10">
-          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl text-primary">Our team</h2>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Sit facilis neque ab nulla vel. Cum eos in laudantium. Temporibus eos totam in dolorum. Nemo vel facere repellendus ut eos dolores similique.</p>
-        </div>
-        <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
-          <li v-for="person in team" :key="person.name">
-            <img class="mx-auto h-24 w-24 rounded-full" :src="person.imageUrl" alt="" />
-            <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">{{ person.name }}</h3>
-            <p class="text-sm leading-6 text-gray-600">{{ person.role }}</p>
-          </li>
-        </ul>
-      </div>
     </main>
   </div>
 </template>
