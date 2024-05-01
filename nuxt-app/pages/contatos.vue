@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <Title>Imptel | Contatos</Title>
     <section class="bg-gray-50 text-black p-5 lg:-mb-56 md:-mb-56 mt-10 " id="contact">
       <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div class="mb-4">

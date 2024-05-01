@@ -1,4 +1,5 @@
 <template>
+  <Title>Imptel | Sobre</Title>
   <div class="bg-white">
     <main class="isolate">
       <!-- Hero section -->
