@@ -13,7 +13,7 @@
         </div>
         <!-- Menu de Links -->
         <nav class="text-center lg:text-right">
-          <ul class="flex flex-col lg:flex-row space-x-10">
+          <ul class="flex flex-col lg:flex-row lg:space-x-5">
             <li class="mb-2 lg:mb-0 lg:mr-6">
               <a href="#" class="hover:text-gray-400">Home</a>
             </li>
