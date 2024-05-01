@@ -4,88 +4,38 @@
 
 <template>
   <!-- Footer -->
-  <div class="mx-auto mt-32 max-w-7xl px-6 lg:px-8">
-    <footer aria-labelledby="footer-heading" class="relative border-t border-gray-900/10 py-24 sm:mt-56 sm:py-32">
-      <h2 id="footer-heading" class="sr-only">Footer</h2>
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <img class="h-14" src="/IMPTEL.svg" alt="Company name">
-        <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm font-semibold leading-6 text-gray-900">Solutions</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Hosting</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Data Services</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Uptime Monitoring</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Enterprise Services</a>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-gray-900">Support</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Pricing</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Documentation</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Guides</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">API Reference</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 class="text-sm font-semibold leading-6 text-gray-900">Company</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Blog</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Jobs</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Press</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Partners</a>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Claim</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy</a>
-                </li>
-                <li>
-                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <footer aria-labelledby="footer-heading" class="bg-gray-900 text-white py-6 relative sm:mt-56 sm:py-24">
+      <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
+        <!-- Logo e Texto Imptel -->
+        <div class="mb-4 lg:mb-0 flex items-center">
+          <img class="w-10 h-10 mr-2" src="/IMPTEL.svg" alt="Logo Imptel">
+          <h3 class="text-2xl lg:text-3xl font-extrabold">Imptel</h3>
+        </div>
+        <!-- Menu de Links -->
+        <nav class="text-center lg:text-right">
+          <ul class="flex flex-col lg:flex-row space-x-10">
+            <li class="mb-2 lg:mb-0 lg:mr-6">
+              <a href="#" class="hover:text-gray-400">Home</a>
+            </li>
+            <li class="mb-2 lg:mb-0 lg:mr-6">
+              <a href="#" class="hover:text-gray-400">Inscrições</a>
+            </li>
+            <li class="mb-2 lg:mb-0 lg:mr-6">
+              <a href="#" class="hover:text-gray-400">Sobre</a>
+            </li>
+            <li class="mb-2 lg:mb-0 lg:mr-6">
+              <a href="#" class="hover:text-gray-400">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Texto e Ícone de Direitos Autorais -->
+        <div class="text-center lg:text-right">
+          <p class="mb-2">Made with love by imptel students</p>
+          <p class="flex items-center justify-center lg:justify-end"><span>&copy; 2024 Imptel. Todos os direitos reservados.</span>
+          </p>
         </div>
       </div>
     </footer>
-  </div>
 </template>
 
 <style scoped>
