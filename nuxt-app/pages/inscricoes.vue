@@ -46,7 +46,7 @@
 
     <!-- Call to Action -->
     <div class="w-full text-center">
-      <p class="text-lg mb-4">Pronto para inscrever seu filho em um de nossos cursos?</p>
+      <p class="text-lg mb-4 mt-5 ">Pronto para inscrever seu filho em um de nossos cursos?</p>
       <a href="#" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">Inscreva-se agora!</a>
     </div>
   </div>
