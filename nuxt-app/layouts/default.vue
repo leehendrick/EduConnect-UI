@@ -6,8 +6,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import Header from "~/pages/components/header.vue";
-import Footer from "~/pages/components/footer.vue";
+import Header from "~/components/header.vue";
+import Footer from "~/components/footer.vue";
 
 const title = useState('title', () => 'Imptel')
 </script>
