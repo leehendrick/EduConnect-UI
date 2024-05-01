@@ -14,6 +14,11 @@
       content: 'Novos materiais de estudo disponíveis para download gratuito! Aproveite essa oportunidade.',
     }
   ])
+  const quandroHonra = ref([
+    {
+
+    }
+  ])
 </script>
 
 <template>
@@ -126,6 +131,50 @@
           <div class="text-center border-t border-primary">
             <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl mt-10">Quadro de Honra</h2>
             <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Conheça nossos alunos de destaque.</p>
+            <div class="flex flex-wrap justify-center">
+              <!-- Aluno 1 -->
+              <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <img class="w-full h-auto" src="" alt="Imagem do Aluno 1">
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Nome do Aluno 1</h3>
+                    <p class="text-sm text-gray-600 mb-2">Curso: Curso do Aluno 1</p>
+                    <p class="text-sm text-gray-600 mb-2">Turma: Turma do Aluno 1</p>
+                    <p class="text-sm text-gray-600 mb-2">Disciplinas: Turma do Aluno 1</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aluno 2 -->
+              <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <img class="w-full h-auto" src="" alt="Imagem do Aluno 2">
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Nome do Aluno 2</h3>
+                    <p class="text-sm text-gray-600 mb-2">Curso: Curso do Aluno 2</p>
+                    <p class="text-sm text-gray-600 mb-2">Turma: Turma do Aluno 2</p>
+                    <p class="text-sm text-gray-600 mb-2">Disciplinas: Turma do Aluno 1</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Aluno 3 -->
+              <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <img class="w-full h-auto" src="/honra.jpg" alt="Imagem do Aluno 3">
+                  <div class="p-4">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Nome do Aluno 3</h3>
+                    <p class="text-sm text-gray-600 mb-2">Curso: Curso do Aluno 3</p>
+                    <p class="text-sm text-gray-600 mb-2">Turma: Turma do Aluno 3</p>
+                    <p class="text-sm text-gray-600 mb-2">Disciplinas: Turma do Aluno 1</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Adicione mais alunos conforme necessário -->
+
+            </div>
+
           </div>
         </div>
       </div>
