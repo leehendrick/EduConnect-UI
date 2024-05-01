@@ -7,7 +7,7 @@
   <div class="container mx-auto px-4 py-8 flex flex-wrap mt-24">
     <!-- Lado Esquerdo: Cursos e Informações Relevantes -->
     <div class="w-full lg:w-1/2 pr-4 mb-8 lg:mb-0 border-r-2 border-gray-300">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-4">Cursos Disponíveis</h2>
+      <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-gray-800">Cursos Disponíveis</h2>
       <div class="relative">
         <div class="container mx-auto text-white">
           <!-- Divisão do conteúdo -->
@@ -36,7 +36,7 @@
     </div>
     <!-- Lado Direito: Requisitos -->
     <div class="w-full lg:w-1/2 pl-8 mb-8 lg:mb-0">
-      <h2 class="text-2xl lg:text-3xl font-bold mb-4">Requisitos para Inscrição</h2>
+      <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-gray-800">Requisitos para Inscrição</h2>
       <ul class="list-disc pl-4">
         <li class="mb-2">Idade entre 6 e 14 anos.</li>
         <li class="mb-2">Apresentar documento de identificação do aluno.</li>
