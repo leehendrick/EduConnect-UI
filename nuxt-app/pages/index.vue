@@ -1,5 +1,7 @@
 
 <script setup>
+
+  const title = useState('title')
   const notasInformativas = ref([
     {
       title:  'Atualização do Curso',
@@ -40,6 +42,7 @@
 </script>
 
 <template>
+  <Title>Imptel | Home</Title>
   <main class="isolate">
     <!-- Hero section -->
     <div class="relative pt-14">
