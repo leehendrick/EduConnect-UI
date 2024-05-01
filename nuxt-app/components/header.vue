@@ -29,13 +29,13 @@ function toggle(status: number){
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12 text-lg">
-        <router-link to="/" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Home</router-link>
-          <router-link to="/inscricoes" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Inscrições</router-link>
-          <router-link to="/sobre" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Sobre</router-link>
-          <router-link to="/contatos" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Contatos</router-link>
+          <nuxt-link to="/" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Home</nuxt-link>
+          <nuxt-link to="/inscricoes" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Inscrições</nuxt-link>
+          <nuxt-link to="/sobre" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Sobre</nuxt-link>
+          <nuxt-link to="/contatos" class="leading-6 hover:text-primary transition duration-300 ease-in-out">Contatos</nuxt-link>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <router-link href="#" class=" font-extrabold text-lg leading-6 hover:text-primary transition duration-300 ease-in-out" to="/login">Log in <span aria-hidden="true">&rarr;</span></router-link>
+        <nuxt-link href="#" class=" font-extrabold text-lg leading-6 hover:text-primary transition duration-300 ease-in-out" to="/login">Log in <span aria-hidden="true">&rarr;</span></nuxt-link>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
