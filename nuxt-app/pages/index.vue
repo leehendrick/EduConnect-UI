@@ -24,7 +24,7 @@
     },
     {
       nomeAluno: 'Claudeth Luvumbua',
-      curso: 'Eléctronica e Telecomunicações',
+      curso: 'Electrônica e Telecomunicações',
       classe: '12ª classe',
       disciplinas: 'Matemática, Física',
       img: '/honra.jpg'
