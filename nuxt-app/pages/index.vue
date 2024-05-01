@@ -86,7 +86,7 @@
                 <!-- Divisão 1 -->
                 <div class="w-full md:w-1/2 p-4">
                   <div class="rounded-lg shadow-md p-6 border-2 hover:border-secondary" data-scroll="bottom-to-top">
-                    <h2 class="text-lg font-extrabold mb-2">Electrónica e Telecomunicações</h2>
+                    <h2 class="text-lg font-extrabold mb-2">Electrônica e Telecomunicações</h2>
                     <p>
                       Descubra os segredos dos circuitos eletrônicos, mergulhe na complexidade das telecomunicações ou explore as maravilhas da informática. Nossa equipe de especialistas está aqui para guiá-lo em cada passo do caminho, garantindo uma experiência de aprendizado envolvente e gratificante.
                     </p>
