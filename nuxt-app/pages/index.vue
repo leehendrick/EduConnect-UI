@@ -1,6 +1,6 @@
 
 <script setup>
-
+  import slideShowVue from './components/slideShow.vue';
   const title = useState('title')
   const notasInformativas = ref([
     {
@@ -22,21 +22,21 @@
       curso: 'Eléctronica e Telecomunicações',
       classe: '10ª classe',
       disciplinas: 'Matemática, Física',
-      img: '/honra.jpg'
+      img: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cHJvZmlsZXx8fHx8fDE3MTUxNzEyOTA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080',
     },
     {
       nomeAluno: 'Claudeth Luvumbua',
       curso: 'Electrônica e Telecomunicações',
       classe: '12ª classe',
       disciplinas: 'Matemática, Física',
-      img: '/honra.jpg'
+      img: 'https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cHJvZmlsZXx8fHx8fDE3MTUxNzExNTQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080'
     },
     {
       nomeAluno: 'Vilma Muafunga',
       curso: 'Informática',
       classe: '12ª classe',
       disciplinas: 'Química, Física',
-      img: '/honra.jpg'
+      img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cHJvZmlsZSxzdHVkZW50fHx8fHx8MTcxNTE3MDk3NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080'
     }
   ])
 </script>
@@ -156,7 +156,7 @@
               <!-- Aluno 1 -->
               <div class="w-full md:w-1/2 lg:w-1/3 p-4" v-for="items in quandroHonra">
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <img class="w-full h-auto" :src="items.img" alt="Imagem do Aluno 1">
+                  <img class="ml-20 w-52 h-52 rounded-full" :src="items.img" alt="Imagem do Aluno 1">
                   <div class="p-4">
                     <h3 class="text-lg font-semibold text-gray-800 mb-2"><strong>Nome:</strong> {{ items.nomeAluno }}</h3>
                     <p class="text-sm text-gray-600 mb-2"><strong>Curso:</strong> {{ items.curso }}</p>
@@ -173,6 +173,7 @@
       </div>
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <!-- Content goes here -->
+          <slideShowVue></slideShowVue>
         </div>
     </div>
   </main>
