@@ -1,6 +1,8 @@
 
 <script setup>
   import slideShowVue from './components/slideShow.vue';
+  import SlideShow from '~/pages/components/slideShow.vue'
+  import { FwbCarousel } from 'flowbite-vue'
   const title = useState('title')
   const notasInformativas = ref([
     {
@@ -39,6 +41,12 @@
       img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cHJvZmlsZSxzdHVkZW50fHx8fHx8MTcxNTE3MDk3NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080'
     }
   ])
+
+  const pictures = [
+    {src: '/public/estudante-sem-fundo.png', alt: 'Imagem'},
+    {src: '/public/estudante-sem-fundo.png', alt: 'Imagem'},
+    {src: '/public/estudante-sem-fundo.png', alt: 'Imagem'},
+  ]
 </script>
 
 <template>
@@ -73,8 +81,8 @@
       </div>
       <div class="py-8 md:py-12 lg:py-16 bg-primary">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="relative flex justify-center text-4xl font-extrabold text-white mb-10">
-            Cursos Ministrados
+          <div class="relative flex justify-center mb-10">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">Cursos Ministrados</h2>
           </div>
           <!-- Divisão do conteúdo -->
           <div class="flex text-white flex-wrap">
@@ -114,6 +122,12 @@
 
       <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
         <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+
+      <div class="md:py-12 lg:py-16">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+          <slide-show/>
+        </div>
       </div>
 
       <div class="py-8 md:py-12 lg:py-16">
@@ -162,10 +176,7 @@
           </div>
         </div>
       </div>
-        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <!-- Content goes here -->
-          <slideShowVue></slideShowVue>
-        </div>
+
     </div>
   </main>
 </template>
