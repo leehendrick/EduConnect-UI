@@ -71,55 +71,46 @@
           </div>
         </div>
       </div>
-
-      <div class="w-full h-full relative overflow-hidden">
-        <img src="/tela2.svg" alt="" class="border-none border-0 ">
-        <div class="absolute inset-0 md:-top-16 lg:-top-28 flex flex-col justify-center items-center">
-          <div class="relative  text-4xl font-extrabold text-white mb-10">
+      <div class="py-8 md:py-12 lg:py-16 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="relative flex justify-center text-4xl font-extrabold text-white mb-10">
             Cursos Ministrados
-            <hr class="bg-white mt-3  h-1 relative rounded-2xl"/>
           </div>
-          <div class="relative">
-            <div class="container mx-auto text-white">
-              <!-- Divisão do conteúdo -->
-              <div class="flex flex-wrap">
-                <!-- Divisão 1 -->
-                <div class="w-full md:w-1/2 p-4">
-                  <div class="rounded-lg shadow-md p-6 border-2 hover:border-secondary" data-scroll="bottom-to-top">
-                    <h2 class="text-lg font-extrabold mb-2">Electrônica e Telecomunicações</h2>
-                    <p>
-                      Descubra os segredos dos circuitos eletrônicos, mergulhe na complexidade das telecomunicações ou explore as maravilhas da informática. Nossa equipe de especialistas está aqui para guiá-lo em cada passo do caminho, garantindo uma experiência de aprendizado envolvente e gratificante.
-                    </p>
-                    <a href="#" class=" mt-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300">
-                      Read more
-                      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-                <!-- Divisão 2 -->
-                <div class="w-full md:w-1/2 p-4">
-                  <div class="rounded-lg shadow-md p-6 border-2 hover:border-green-600" data-scroll="bottom-to-top">
-                    <h2 class="text-lg font-extrabold mb-2">Informática</h2>
-                    <p>
-                      Explore o poder dos algoritmos, mergulhe na criação de aplicativos inovadores e domine as habilidades essenciais para se destacar neste campo dinâmico e em constante evolução. Com uma abordagem prática e orientação especializada, estamos aqui para ajudá-lo a alcançar seus objetivos e conquistar novos horizontes na área da informática.
-                    </p>
-                    <a href="#" class=" mt-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
-                      Read more
-                      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+          <!-- Divisão do conteúdo -->
+          <div class="flex text-white flex-wrap">
+            <!-- Divisão 1 -->
+            <div class="w-full md:w-1/2 p-4">
+              <div class="rounded-lg shadow-md p-6 border-2 hover:border-secondary" data-scroll="bottom-to-top">
+                <h2 class="text-lg font-extrabold mb-2">Electrônica e Telecomunicações</h2>
+                <p>
+                  Descubra os segredos dos circuitos eletrônicos, mergulhe na complexidade das telecomunicações ou explore as maravilhas da informática. Nossa equipe de especialistas está aqui para guiá-lo em cada passo do caminho, garantindo uma experiência de aprendizado envolvente e gratificante.
+                </p>
+                <a href="#" class=" mt-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- Divisão 2 -->
+            <div class="w-full md:w-1/2 p-4">
+              <div class="rounded-lg shadow-md p-6 border-2 hover:border-green-600" data-scroll="bottom-to-top">
+                <h2 class="text-lg font-extrabold mb-2">Informática</h2>
+                <p>
+                  Explore o poder dos algoritmos, mergulhe na criação de aplicativos inovadores e domine as habilidades essenciais para se destacar neste campo dinâmico e em constante evolução. Com uma abordagem prática e orientação especializada, estamos aqui para ajudá-lo a alcançar seus objetivos e conquistar novos horizontes na área da informática.
+                </p>
+                <a href="#" class=" mt-2 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+                  Read more
+                  <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
-
         </div>
       </div>
-
 
       <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
         <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
