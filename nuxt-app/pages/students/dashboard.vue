@@ -5,9 +5,9 @@ definePageMeta({
 })
 
 const stats = [
-  { name: 'Total Subscribers', stat: '71,897' },
-  { name: 'Avg. Open Rate', stat: '58.16%' },
-  { name: 'Avg. Click Rate', stat: '24.57%' },
+  { name: 'Total de disciplinas', stat: '10' },
+  { name: 'Média geral', stat: '15 V' },
+  { name: 'Progresso do ano letivo', stat: '60.23%' },
 ]
 </script>
 
