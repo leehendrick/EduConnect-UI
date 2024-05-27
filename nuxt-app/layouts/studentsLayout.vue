@@ -164,7 +164,6 @@ import {
   Bars3Icon,
   BellIcon,
   CalendarIcon,
-  ChartPieIcon,
   Cog6ToothIcon,
   FolderIcon,
   HomeIcon, InboxIcon, MegaphoneIcon,
