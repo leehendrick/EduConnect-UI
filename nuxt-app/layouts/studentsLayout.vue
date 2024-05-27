@@ -167,7 +167,7 @@ import {
   ChartPieIcon,
   Cog6ToothIcon,
   FolderIcon,
-  HomeIcon, InboxIcon,
+  HomeIcon, InboxIcon, MegaphoneIcon,
   XMarkIcon
 } from '@heroicons/vue/20/solid'
 import { ChevronDownIcon, MagnifyingGlassIcon, PresentationChartBarIcon } from '@heroicons/vue/20/solid'
@@ -179,7 +179,7 @@ const navigation = [
   { name: 'Material', href: '#', icon: FolderIcon, current: false },
   { name: 'Solicitações', href: '#', icon: InboxIcon, current: false },
   { name: 'Finanças', href: '#', icon: BanknotesIcon, current: false },
-  { name: 'Comunicados', href: '#', icon: ChartPieIcon, current: false },
+  { name: 'Comunicados', href: '#', icon: MegaphoneIcon, current: false },
 ]
 const teams = [
   { id: 1, name: 'Heroicons', href: '#', initial: 'H', current: false },
