@@ -21,5 +21,10 @@ const stats = [
         </div>
       </dl>
     </div>
+    <div class="py-4 w-full sm:px-6 lg:px-8">
+      <div class="bg-white overflow-hidden shadow-md sm:rounded-lg">
+        <div class="p-6 text-gray-900">You're logged in!</div>
+      </div>
+    </div>
   </div>
 </template>
