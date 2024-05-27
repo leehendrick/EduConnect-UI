@@ -166,10 +166,8 @@ import {
   CalendarIcon,
   ChartPieIcon,
   Cog6ToothIcon,
-  DocumentDuplicateIcon,
   FolderIcon,
   HomeIcon, InboxIcon,
-  UsersIcon,
   XMarkIcon
 } from '@heroicons/vue/20/solid'
 import { ChevronDownIcon, MagnifyingGlassIcon, PresentationChartBarIcon } from '@heroicons/vue/20/solid'
