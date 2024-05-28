@@ -1,7 +1,7 @@
 <script setup>
 
 definePageMeta({
-  layout: 'students-layout',
+  layout: 'encarregados-layout',
 })
 
 const stats = [
