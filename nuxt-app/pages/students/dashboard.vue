@@ -15,15 +15,15 @@ const stats = [
   <div class="">
     <div>
       <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
-        <div v-for="item in stats" :key="item.name" class="overflow-hidden rounded-lg bg-white px-4 py-5 shadow sm:p-6">
+        <div v-for="item in stats" :key="item.name" class="overflow-hidden rounded-lg bg-white px-4 py-5 shadow-md shadow-secondary sm:p-6">
           <dt class="truncate text-sm font-medium text-gray-500">{{ item.name }}</dt>
           <dd class="mt-1 text-3xl font-semibold tracking-tight text-gray-900">{{ item.stat }}</dd>
         </div>
       </dl>
     </div>
     <div class="py-5">
-      <div class="bg-white overflow-hidden shadow-md sm:rounded-lg">
-        <div class="p-6 text-gray-900">You're logged in!</div>
+      <div class="bg-secondary overflow-hidden shadow-gray-500 shadow-md sm:rounded-lg">
+        <div class="p-6 text-white">You're logged in!</div>
       </div>
     </div>
   </div>
