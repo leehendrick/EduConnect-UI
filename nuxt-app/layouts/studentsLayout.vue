@@ -165,7 +165,7 @@ import { ChevronDownIcon, MagnifyingGlassIcon, PresentationChartBarIcon } from '
 const navigation = [
   { name: 'Landing-Page', href: '/', icon: HomeIcon, current: false },
   { name: 'Dashboard', href: '/students/dashboard', icon: PresentationChartBarIcon, current: true },
-  { name: 'Horário', href: '', icon: CalendarIcon, current: false },
+  { name: 'Horário', href: '/students/horario', icon: CalendarIcon, current: false },
   { name: 'Material', href: '#', icon: FolderIcon, current: false },
   { name: 'Solicitações', href: '#', icon: InboxIcon, current: false },
   { name: 'Finanças', href: '#', icon: BanknotesIcon, current: false },
