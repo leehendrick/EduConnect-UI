@@ -166,7 +166,7 @@ const navigation = [
   { name: 'Horário', href: '/students/horario', icon: CalendarIcon, current: false },
   { name: 'Notas', href: '/students/notas', icon: DocumentTextIcon, current: false },
   { name: 'Material', href: '#', icon: FolderIcon, current: false },
-  { name: 'Solicitações', href: '#', icon: InboxIcon, current: false },
+  { name: 'Solicitações', href: '/students/solicitacoes', icon: InboxIcon, current: false },
   { name: 'Finanças', href: '#', icon: BanknotesIcon, current: false },
   { name: 'Comunicados', href: '#', icon: MegaphoneIcon, current: false },
 ]
