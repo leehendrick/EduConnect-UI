@@ -62,6 +62,11 @@ const notas = [
                 </tr>
                 </tbody>
               </table>
+              <div class=" m-2 bg-secondary overflow-hidden shadow-gray-500 shadow-md sm:rounded-lg">
+                <div class="text-white space-x-2 p-5 flex justify-end">
+                  <h1>Média Final: 10</h1>
+                </div>
+              </div>
             </div>
           </div>
         </div>
