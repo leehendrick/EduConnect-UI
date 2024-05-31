@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
+
 definePageMeta({
   layout: 'students-layout',
 })
@@ -22,6 +24,10 @@ const notas = [
   <div class="">
     <div class="overflow-hidden shadow-gray-300 shadow-md sm:rounded-lg">
       <div class="text-white space-x-2 p-5 flex justify-end">
+        <form class="relative" action="#" method="GET">
+          <MagnifyingGlassIcon class="pointer-events-none absolute inset-y-0 left-0 h-full w-5 text-gray-400" aria-hidden="true" />
+          <input id="search-field" class="block h-full w-auto border-0 py-0 pl-8 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm" placeholder="Search..." type="search" name="search" />
+        </form>
         <form class="max-w-sm mx-5">
           <label for="underline_select_1" class="sr-only">Underline select</label>
           <select id="underline_select_1" class="py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer">
