@@ -7,10 +7,10 @@ definePageMeta({
 const horario = [
   { tempo: "12H30 - 13H15", ord: "1º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
   { tempo: "13H20 - 14H05", ord: "2º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
-  { tempo: "14H10 - 14H55", ord: "3º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
-  { tempo: "15H10 - 15H55", ord: "4º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
-  { tempo: "16H00 - 16H45", ord: "5º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
-  { tempo: "16H50 - 17H35", ord: "6º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
+  { tempo: "14H10 - 14H55", ord: "3º", segunda: "TREI", terca: "MAT", quarta: "EMP", quinta: "SEAC", sexta: "TLP" },
+  { tempo: "15H10 - 15H55", ord: "4º", segunda: "TREI", terca: "MAT", quarta: "EMP", quinta: "SEAC", sexta: "TLP" },
+  { tempo: "16H00 - 16H45", ord: "5º", segunda: "TREI", terca: "", quarta: "ING. TEC.", quinta: "FIS", sexta: "TLP" },
+  { tempo: "16H50 - 17H35", ord: "6º", segunda: "TREI", terca: "", quarta: "ING. TEC.", quinta: "FIS", sexta: "TLP" },
 ]
 
 </script>
