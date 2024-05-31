@@ -167,7 +167,7 @@ const navigation = [
   { name: 'Landing-Page', href: '/', icon: HomeIcon, current: false },
   { name: 'Dashboard', href: '/students/dashboard', icon: PresentationChartBarIcon, current: false },
   { name: 'Horário', href: '/students/horario', icon: CalendarIcon, current: false },
-  { name: 'Notas', href: '/students/horario', icon: DocumentTextIcon, current: false },
+  { name: 'Notas', href: '/students/notas', icon: DocumentTextIcon, current: false },
   { name: 'Material', href: '#', icon: FolderIcon, current: false },
   { name: 'Solicitações', href: '#', icon: InboxIcon, current: false },
   { name: 'Finanças', href: '#', icon: BanknotesIcon, current: false },
