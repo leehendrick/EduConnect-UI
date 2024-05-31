@@ -4,6 +4,18 @@ definePageMeta({
   layout: 'students-layout',
 })
 
+const notas = [
+  {disciplinas: "Matemática", media: 10, faltas: 27},
+  {disciplinas: "Física", media: 10, faltas: 27},
+  {disciplinas: "O.G.I", media: 10, faltas: 27},
+  {disciplinas: "Empreendedorismo", media: 10, faltas: 27},
+  {disciplinas: "SEAC", media: 10, faltas: 27},
+  {disciplinas: "Inglês Técnico", media: 10, faltas: 27},
+  {disciplinas: "T.L.P", media: 10, faltas: 27},
+  {disciplinas: "T.R.E.I", media: 10, faltas: 27},
+  {disciplinas: "Matemática", media: 10, faltas: 27},
+  {disciplinas: "P.T", media: 10, faltas: 27},
+]
 </script>
 
 <template>
@@ -29,6 +41,30 @@ definePageMeta({
             <option value="FR">Terceiro</option>
           </select>
         </form>
+      </div>
+      <div class="px-4 sm:px-6 lg:px-8">
+        <div class="mt-8 flow-root">
+          <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+              <table class="min-w-full divide-y divide-gray-300 border-2 mb-5">
+                <thead>
+                <tr class="bg-secondary  text-white">
+                  <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">DISCIPLINAS</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">MÉDIA</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">FALTAS</th>
+                </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                <tr v-for="item in notas">
+                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ item.disciplinas }}</td>
+                  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ item.media }}</td>
+                  <td class="whitespace-nowrap px-3 py-4 text-sm text-red-500">{{ item.faltas }}</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
