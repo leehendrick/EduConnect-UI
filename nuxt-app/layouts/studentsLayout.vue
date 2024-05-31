@@ -158,14 +158,16 @@ import {
   Cog6ToothIcon,
   FolderIcon,
   HomeIcon, InboxIcon, MegaphoneIcon,
-  XMarkIcon
+  XMarkIcon,
+  DocumentTextIcon
 } from '@heroicons/vue/20/solid'
 import { ChevronDownIcon, MagnifyingGlassIcon, PresentationChartBarIcon } from '@heroicons/vue/20/solid'
 
 const navigation = [
   { name: 'Landing-Page', href: '/', icon: HomeIcon, current: false },
-  { name: 'Dashboard', href: '/students/dashboard', icon: PresentationChartBarIcon, current: true },
+  { name: 'Dashboard', href: '/students/dashboard', icon: PresentationChartBarIcon, current: false },
   { name: 'Horário', href: '/students/horario', icon: CalendarIcon, current: false },
+  { name: 'Notas', href: '/students/horario', icon: DocumentTextIcon, current: false },
   { name: 'Material', href: '#', icon: FolderIcon, current: false },
   { name: 'Solicitações', href: '#', icon: InboxIcon, current: false },
   { name: 'Finanças', href: '#', icon: BanknotesIcon, current: false },
