@@ -4,9 +4,13 @@ definePageMeta({
   layout: 'students-layout',
 })
 
-const people = [
-  { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
-  // More people...
+const horario = [
+  { tempo: "12H30 - 13H15", ord: "1º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
+  { tempo: "13H20 - 14H05", ord: "2º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
+  { tempo: "14H10 - 14H55", ord: "3º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
+  { tempo: "15H10 - 15H55", ord: "4º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
+  { tempo: "16H00 - 16H45", ord: "5º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
+  { tempo: "16H50 - 17H35", ord: "6º", segunda: "TREI", terca: "OGI", quarta: "MAT", quinta: "SEAC", sexta: "PROJ. TECN" },
 ]
 
 </script>
@@ -19,19 +23,24 @@ const people = [
             <table class="min-w-full divide-y divide-gray-300">
               <thead>
               <tr>
-                <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0">DATA</th>
-                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">CURSO</th>
-                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">DISCIPLINA</th>
-                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">HORA</th>
-                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">PERIODO</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold text-gray-900">TEMPO</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold text-gray-900">ORD</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold text-gray-900">SEGUNDA</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold text-gray-900">TERÇA</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold text-gray-900">QUARTA</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold text-gray-900">QUINTA</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold text-gray-900">SEXTA</th>
               </tr>
               </thead>
               <tbody class="divide-y divide-gray-200">
-              <tr v-for="person in people" :key="person.email">
-                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">{{ person.name }}</td>
-                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ person.title }}</td>
-                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ person.email }}</td>
-                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ person.role }}</td>
+              <tr v-for="item in horario">
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ item.tempo }}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ item.ord }}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ item.segunda}}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ item.terca }}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ item.quarta }}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ item.quinta }}</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ item.sexta }}</td>
               </tr>
               </tbody>
             </table>
