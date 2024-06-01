@@ -2,7 +2,7 @@
   <div class="relative w-full max-w-6xl mx-auto overflow-hidden">
     <!-- Slides -->
     <div v-for="(slide, index) in slides" :key="index" class="slides" :class="{ 'active': index === currentSlide, 'inactive': index !== currentSlide }">
-      <img :src="slide" alt="Slide Image" class="w-full h-auto rounded-lg object-cover">
+      <img :src="slide" alt="Slide Image" class="w-full h-full rounded-lg object-cover">
     </div>
 
     <!-- Navigation Buttons -->
@@ -20,9 +20,10 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const slides = ref([
-  '/imptel_1.jpeg',
+  '/imptel_0.jpeg',
   '/imptel_2.jpeg',
   '/imptel_3.jpeg',
+  '/imptel_4.jpeg',
 ]);
 
 const currentSlide = ref(0);
@@ -65,6 +66,7 @@ onUnmounted(() => {
   filter: blur(5px);
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
 }
