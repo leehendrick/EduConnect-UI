@@ -1,8 +1,8 @@
 <template>
-  <div class="relative w-full max-w-4xl mx-auto">
+  <div class="relative w-full max-w-6xl mx-auto overflow-hidden">
     <!-- Slides -->
-    <div v-for="(slide, index) in slides" :key="index" class="slides" :class="{ 'block': index === currentSlide, 'hidden': index !== currentSlide }">
-      <img :src="slide" alt="Slide Image" class="w-full h-auto rounded-lg">
+    <div v-for="(slide, index) in slides" :key="index" class="slides" :class="{ 'active': index === currentSlide, 'inactive': index !== currentSlide }">
+      <img :src="slide" alt="Slide Image" class="w-full h-auto rounded-lg object-cover">
     </div>
 
     <!-- Navigation Buttons -->
@@ -20,9 +20,9 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const slides = ref([
-  '/estudante-sem-fundo.png',
-  '/estudante-black-white.png',
-  '/estudante-sem-fundo.png',
+  '/imptel_1.jpeg',
+  '/imptel_2.jpeg',
+  '/imptel_3.jpeg',
 ]);
 
 const currentSlide = ref(0);
@@ -37,7 +37,7 @@ const nextSlide = () => {
 };
 
 const startSlideShow = () => {
-  slideInterval = setInterval(nextSlide, 4000); // Mudar slide a cada 3 segundos
+  slideInterval = setInterval(nextSlide, 4000); // Mudar slide a cada 4 segundos
 };
 
 const stopSlideShow = () => {
@@ -59,6 +59,47 @@ onUnmounted(() => {
 
 <style scoped>
 .slides {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+  opacity: 0;
+  transform: scale(0.95);
+  filter: blur(5px);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slides.active {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+}
+
+.slides.inactive {
+  opacity: 0;
+  transform: scale(0.95);
+  filter: blur(5px);
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.relative {
+  height: 500px; /* Ajuste a altura conforme necessário */
+}
+
+.slides-container {
+  position: relative;
+}
+
+button {
+  z-index: 10;
+}
+
+.indicatorClass {
+  transition: background-color 0.3s ease;
 }
 </style>
