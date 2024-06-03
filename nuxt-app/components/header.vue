@@ -15,10 +15,11 @@ function toggle(status: number){
   <header class="fixed inset-x-0 top-0 z-50 bg-white">
     <nav class="flex items-center justify-between p-6 lg:px-8 border-b border-primary" aria-label="Global">
       <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <nuxt-link href="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
           <img class="h-14 w-auto" src="/IMPTEL.svg" alt="">
-        </a>
+        </nuxt-link>
+        <h1 class="mt-3 ml-2 font-extrabold text-primary text-2xl">IMPTEL</h1>
       </div>
       <div class="flex lg:hidden">
         <button type="button" @click="toggle(1)" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
