@@ -167,8 +167,8 @@ const navigation = [
   { name: 'Notas', href: '/students/notas', icon: DocumentTextIcon, current: false },
   { name: 'Material', href: '#', icon: FolderIcon, current: false },
   { name: 'Solicitações', href: '/students/solicitacoes', icon: InboxIcon, current: false },
-  { name: 'Finanças', href: '#', icon: BanknotesIcon, current: false },
-  { name: 'Comunicados', href: '#', icon: MegaphoneIcon, current: false },
+  { name: 'Finanças', href: '/students/financas', icon: BanknotesIcon, current: false },
+  { name: 'Comunicados', href: '/students/comunicados', icon: MegaphoneIcon, current: false },
 ]
 
 const userNavigation = [
