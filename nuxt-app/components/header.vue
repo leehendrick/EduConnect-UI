@@ -19,7 +19,7 @@ function toggle(status: number){
           <span class="sr-only">Your Company</span>
           <img class="h-14 w-auto" src="/IMPTEL.svg" alt="">
         </nuxt-link>
-        <h1 class="mt-3 ml-2 font-extrabold text-primary text-2xl">IMPTEL</h1>
+        <h1 class="mt-3 ml-2 font-extrabold text-primary text-2xl lg:text-3xl">IMPTEL</h1>
       </div>
       <div class="flex lg:hidden">
         <button type="button" @click="toggle(1)" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
