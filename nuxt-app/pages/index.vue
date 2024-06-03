@@ -42,11 +42,6 @@
     }
   ])
 
-  const pictures = [
-    {src: '/public/estudante-sem-fundo.png', alt: 'Imagem'},
-    {src: '/public/estudante-sem-fundo.png', alt: 'Imagem'},
-    {src: '/public/estudante-sem-fundo.png', alt: 'Imagem'},
-  ]
 </script>
 
 <template>
