@@ -9,7 +9,7 @@
         <!-- Logo e Texto Imptel -->
         <div class="mb-4 lg:mb-0 flex items-center">
           <img class="w-10 h-10 mr-2" src="/IMPTEL.svg" alt="Logo Imptel">
-          <h3 class="text-2xl lg:text-3xl font-extrabold">Imptel</h3>
+          <h3 class="text-2xl lg:text-3xl font-extrabold">IMPTEL</h3>
         </div>
         <!-- Menu de Links -->
         <nav class="text-center lg:text-right">
