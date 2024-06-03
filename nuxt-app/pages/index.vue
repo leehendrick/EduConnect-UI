@@ -1,8 +1,6 @@
 
 <script setup>
-  import slideShowVue from './components/slideShow.vue';
   import SlideShow from '~/pages/components/slideShow.vue'
-  import { FwbCarousel } from 'flowbite-vue'
   const title = useState('title')
   const notasInformativas = ref([
     {
