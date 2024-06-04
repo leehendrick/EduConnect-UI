@@ -6,10 +6,10 @@ definePageMeta({
   layout: 'nolayout',
 })
 
-onMounted(() => {
-  let response = axios.get('http://localhost:4002/aluno')
-  console.log(response)
-})
+
+const test = () => {
+  axios.post("", data)
+}
 </script>
 
 <template>
