@@ -66,9 +66,6 @@ onMounted(() => {
               <label for="remember-me" class="ml-3 block text-sm leading-6 text-gray-900">Remember me</label>
             </div>
 
-            <div class="text-sm leading-6">
-              <a href="#" class="font-semibold text-secondary hover:text-blue-700">Forgot password?</a>
-            </div>
           </div>
 
           <div>
