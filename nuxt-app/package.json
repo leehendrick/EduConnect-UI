@@ -15,6 +15,7 @@
     "@nuxtjs/tailwindcss": "^6.12.0",
     "flowbite-vue": "^0.1.4",
     "nuxt": "^3.11.2",
+    "sweetalert2": "^11.11.0",
     "swiper": "^11.1.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
