@@ -7,7 +7,7 @@ definePageMeta({
 })
 
 const notas = [
-  {disciplinas: "Matemática", media: 10, faltas: 27},
+  {disciplinas: "Matemática", media: 10, faltas: 24},
   {disciplinas: "Física", media: 10, faltas: 27},
   {disciplinas: "O.G.I", media: 10, faltas: 27},
   {disciplinas: "Empreendedorismo", media: 10, faltas: 27},
