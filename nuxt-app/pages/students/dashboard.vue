@@ -9,6 +9,7 @@ const stats = [
   { name: 'Média geral', stat: '15 V' },
   { name: 'Progresso do ano letivo', stat: '60.23%' },
 ]
+
 </script>
 
 <template>
