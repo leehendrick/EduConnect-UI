@@ -174,11 +174,11 @@ const navigation = [
   { name: 'Landing-Page', href: '/', icon: HomeIcon, },
   { name: 'Dashboard', href: '/students/dashboard', icon: PresentationChartBarIcon, current: route.path === '/students/dashboard' },
   { name: 'Horário', href: '/students/horario', icon: CalendarIcon, current: route.path === '/students/horario' },
-  { name: 'Notas', href: '/students/notas', icon: DocumentTextIcon, current: false },
-  { name: 'Material', href: '#', icon: FolderIcon, current: false },
-  { name: 'Solicitações', href: '/students/solicitacoes', icon: InboxIcon, current: false },
-  { name: 'Finanças', href: '/students/financas', icon: BanknotesIcon, current: false },
-  { name: 'Comunicados', href: '/students/comunicados', icon: MegaphoneIcon, current: false },
+  { name: 'Notas', href: '/students/notas', icon: DocumentTextIcon, current: route.path === '/students/notas' },
+  { name: 'Material', href: '#', icon: FolderIcon, current: route.path === '' },
+  { name: 'Solicitações', href: '/students/solicitacoes', icon: InboxIcon, current: route.path === '/students/solicitacoes' },
+  { name: 'Finanças', href: '/students/financas', icon: BanknotesIcon, current: route.path === '/students/financas' },
+  { name: 'Comunicados', href: '/students/comunicados', icon: MegaphoneIcon, current: route.path === '/students/comunicados' },
 ]
 
 const userNavigation = [
