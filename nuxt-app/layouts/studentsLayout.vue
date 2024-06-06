@@ -64,10 +64,10 @@
             <li>
               <ul role="list" class="-mx-2 space-y-1">
                 <li v-for="item in navigation" :key="item.name">
-                  <nuxt-link :href="item.href" :class="[item.current ? 'bg-gray-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800', 'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold']">
+                  <a :href="item.href" :class="[item.current ? 'bg-gray-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800', 'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold']">
                     <component :is="item.icon" class="h-6 w-6 shrink-0" aria-hidden="true" />
                     {{ item.name }}
-                  </nuxt-link>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -159,11 +159,21 @@ import {
   DocumentTextIcon
 } from '@heroicons/vue/20/solid'
 import { ChevronDownIcon, MagnifyingGlassIcon, PresentationChartBarIcon } from '@heroicons/vue/20/solid'
+const route = useRoute();
+
+onMounted(() => {
+  console.log(`The path: ${route.path}`);
+})
+
+const flag = ref(false)
+const reloadPage = () => {
+  window.location.reload();
+};
 
 const navigation = [
-  { name: 'Landing-Page', href: '/', icon: HomeIcon, current: false },
-  { name: 'Dashboard', href: '/students/dashboard', icon: PresentationChartBarIcon, current: false },
-  { name: 'Horário', href: '/students/horario', icon: CalendarIcon, current: false },
+  { name: 'Landing-Page', href: '/', icon: HomeIcon, },
+  { name: 'Dashboard', href: '/students/dashboard', icon: PresentationChartBarIcon, current: route.path === '/students/dashboard' },
+  { name: 'Horário', href: '/students/horario', icon: CalendarIcon, current: route.path === '/students/horario' },
   { name: 'Notas', href: '/students/notas', icon: DocumentTextIcon, current: false },
   { name: 'Material', href: '#', icon: FolderIcon, current: false },
   { name: 'Solicitações', href: '/students/solicitacoes', icon: InboxIcon, current: false },
