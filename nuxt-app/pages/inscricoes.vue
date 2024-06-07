@@ -38,8 +38,11 @@
     <div class="w-full lg:w-1/2 pl-8 mb-8 lg:mb-0">
       <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-gray-800">Requisitos para Inscrição</h2>
       <ul class="list-disc pl-4">
-        <li class="mb-2">Idade entre 6 e 14 anos.</li>
-        <li class="mb-2">Apresentar documento de identificação do aluno.</li>
+        <li class="mb-2">Idade minima 14 anos,realizar 15 até maio</li>
+        <li class="mb-2">Certificado da 9ºclasse</li>
+        <li class="mb-2">1 fotografia tipo passe formato jpeg ou pdf</li>
+        <li class="mb-2">Cartão de vacina</li>
+        <li class="mb-2">Atestado medico</li>
         <li class="mb-2">Preenchimento do formulário de inscrição online.</li>
       </ul>
     </div>
