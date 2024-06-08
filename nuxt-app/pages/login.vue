@@ -1,15 +1,43 @@
 <script setup lang="ts">
 import { EnvelopeIcon, KeyIcon } from '@heroicons/vue/20/solid'
 import axios from 'axios'
+import Swal from 'sweetalert2'
+
 const title = useState('title')
 definePageMeta({
   layout: 'nolayout',
 })
 
+const test = async () => {
+  try {
+    const response = await $fetch('http://localhost:3000/admin/login', {
+      method: 'POST',
+      body: JSON.stringify({ email: "test@example.com", senha: "1234" }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
 
-const test = () => {
-  axios.post("", data)
+    console.log(response); // Exibir a resposta no console para depuração
+
+    // Exibir a mensagem específica no SweetAlert
+    await Swal.fire({
+      title: "Test",
+      text: `Login feito com sucesso`,
+      icon: "success"
+    });
+  } catch (error) {
+    console.error('Erro:', error.response);
+    let err = error.response._data.message
+    // Exibir mensagem de erro no SweetAlert
+    await Swal.fire({
+      title: "Erro",
+      text: `${err}`,
+      icon: "error"
+    });
+  }
 }
+
 </script>
 
 <template>
@@ -70,7 +98,7 @@ const test = () => {
 
           <div>
             <button
-              @click="test"
+              @click.prevent="test"
               type="submit"
               class="flex w-full justify-center rounded-md bg-secondary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
