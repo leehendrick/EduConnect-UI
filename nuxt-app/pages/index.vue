@@ -6,7 +6,7 @@
     {
       img: '/feira_de_emp.jpeg',
       title:  'Feira de Empreendedorismo',
-      content: 'Novo conteúdo adicionado ao curso de Eletrônica e Telecomunicações! Não perca as últimas novidades.',
+      content: 'O Instituto Médio Politécnico de Telecomunicações (IMPTEL) realizou uma incrível Feira de Empreendedorismo! Estudantes apresentaram suas inovadoras ideias de negócios, mostrando criatividade e espírito empreendedor.',
     },
     {
       img: '/feira_de_tec.jpeg',
