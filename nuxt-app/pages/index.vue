@@ -4,17 +4,17 @@
   const title = useState('title')
   const notasInformativas = ref([
     {
-      img: '',
+      img: '/feira_de_emp.jpeg',
       title:  'Feira de Empreendedorismo',
       content: 'Novo conteúdo adicionado ao curso de Eletrônica e Telecomunicações! Não perca as últimas novidades.',
     },
     {
-      img: '',
+      img: '/feira_de_tec.jpeg',
       title:  'Feira de Tecnologia',
       content: 'Junte-se a nós no próximo webinar sobre Inteligência Artificial na Informática. Inscreva-se agora!',
     },
     {
-      img: '',
+      img: '/feira.jpeg',
       title:  'Batismo de caloiros',
       content: 'Novos materiais de estudo disponíveis para download gratuito! Aproveite essa oportunidade.',
     }
@@ -135,9 +135,9 @@
               <!-- Nota Informativa -->
               <div  v-for="item in notasInformativas" class="bg-white overflow-hidden shadow rounded-lg border-2 border-primary">
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                  <a href="#">
-                    <img class="" src="/feira_de_emp.jpeg" alt="" />
-                  </a>
+                  <div>
+                    <img class="w-full h-full object-cover" :src="item.img" alt="" />
+                  </div>
                   <div class="p-5">
                     <a href="#">
                       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ item.title }}</h5>
