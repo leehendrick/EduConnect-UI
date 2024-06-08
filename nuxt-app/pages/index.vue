@@ -11,7 +11,7 @@
     {
       img: '/feira_de_tec.jpeg',
       title:  'Feira de Tecnologia',
-      content: 'Junte-se a nós no próximo webinar sobre Inteligência Artificial na Informática. Inscreva-se agora!',
+      content: 'O Instituto Médio Politécnico de Telecomunicações (IMPTEL) realizou uma incrível Feira de Tecnologia! Estudantes apresentaram suas inovadoras ideias e projetos tecnológicos, mostrando criatividade e conhecimento técnico.',
     },
     {
       img: '/feira.jpeg',
