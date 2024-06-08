@@ -129,11 +129,7 @@ const values = [
     description:
       'Reconhecemos a importância do desenvolvimento pessoal e oferecemos oportunidades para o crescimento acadêmico, social e emocional.',
   },
-  {
-    name: 'Enjoy downtime',
-    description:
-      'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
-  },
+
 ]
 const team = [
   {
