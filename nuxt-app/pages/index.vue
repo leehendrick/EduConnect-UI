@@ -4,15 +4,18 @@
   const title = useState('title')
   const notasInformativas = ref([
     {
-      title:  'Atualização do Curso',
+      img: '',
+      title:  'Feira de Empreendedorismo',
       content: 'Novo conteúdo adicionado ao curso de Eletrônica e Telecomunicações! Não perca as últimas novidades.',
     },
     {
-      title:  'Evento Online',
+      img: '',
+      title:  'Feira de Tecnologia',
       content: 'Junte-se a nós no próximo webinar sobre Inteligência Artificial na Informática. Inscreva-se agora!',
     },
     {
-      title:  'Recursos Extras',
+      img: '',
+      title:  'Batismo de caloiros',
       content: 'Novos materiais de estudo disponíveis para download gratuito! Aproveite essa oportunidade.',
     }
   ])
