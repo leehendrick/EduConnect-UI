@@ -16,7 +16,7 @@
     {
       img: '/feira.jpeg',
       title:  'Batismo de caloiros',
-      content: 'Novos materiais de estudo disponíveis para download gratuito! Aproveite essa oportunidade.',
+      content: 'O Instituto Médio Politécnico de Telecomunicações (IMPTEL) celebrou uma  cerimônia de Batismo de Caloiros! Novos estudantes foram calorosamente recebidos em um evento repleto de tradições e atividades.',
     }
   ])
   const quandroHonra = ref([
