@@ -10,9 +10,9 @@ definePageMeta({
 
 const test = async () => {
   try {
-    const response = await $fetch('http://localhost:3000/admin/login', {
+    const response = await $fetch('http://localhost:4002/api/users/login', {
       method: 'POST',
-      body: JSON.stringify({ email: "test@example.com", senha: "1234" }),
+      body: JSON.stringify({ email: "hendrick.nkuba@gmail.com", senha: "mypass" }),
       headers: {
         'Content-Type': 'application/json'
       }
