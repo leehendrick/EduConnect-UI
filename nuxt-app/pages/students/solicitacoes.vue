@@ -27,10 +27,10 @@ const notas = [
               <table class="min-w-full divide-y divide-gray-300 border-2 mb-5">
                 <thead>
                 <tr class="bg-secondary  text-white">
-                  <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">TIPO DE SOLICITAÇÃO</th>
-                  <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">DATA-ENVIO</th>
-                  <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">STATUS</th>
-                  <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">NOTA</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">TIPO DE SOLICITAÇÃO</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">DATA-ENVIO</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">STATUS</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">NOTA</th>
                 </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-200">
