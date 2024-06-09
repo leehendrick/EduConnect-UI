@@ -25,14 +25,6 @@ definePageMeta({
         <td class="py-3 px-4 border-b border-gray-200">01/05/2024</td>
         <td class="py-3 px-4 border-b border-gray-200">R$ 1000,00</td>
         <td class="py-3 px-4 border-b border-gray-200">Pago</td>
-        <td class="py-3 px-4 border-b border-gray-200">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Editar
-          </button>
-          <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2">
-            Excluir
-          </button>
-        </td>
       </tr>
       <!-- Adicione mais linhas conforme necessário -->
       </tbody>
