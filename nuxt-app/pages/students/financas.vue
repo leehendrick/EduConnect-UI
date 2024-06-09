@@ -15,7 +15,6 @@ definePageMeta({
         <th class="py-3 px-4 border-b border-gray-200">Data de Pagamento</th>
         <th class="py-3 px-4 border-b border-gray-200">Valor</th>
         <th class="py-3 px-4 border-b border-gray-200">Status</th>
-        <th class="py-3 px-4 border-b border-gray-200">Ações</th>
       </tr>
       </thead>
       <tbody class="text-gray-600 text-sm font-light">
