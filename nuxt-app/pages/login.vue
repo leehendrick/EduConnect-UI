@@ -18,8 +18,8 @@ const test = async () => {
       }
     });
 
-    console.log(response); // Exibir a resposta no console para depuração
-
+    console.log(response.accessToken); // Exibir a resposta no console para depuração
+    localStorage.setItem('token', response.accessToken)
     // Exibir a mensagem específica no SweetAlert
     await Swal.fire({
       title: "Test",
@@ -83,15 +83,19 @@ const test = async () => {
             </div>
           </div>
 
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              <input
-                id="remember-me"
-                name="remember-me"
-                type="checkbox"
-                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
-              />
-              <label for="remember-me" class="ml-3 block text-sm leading-6 text-gray-900">Remember me</label>
+          <div class="">
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="userType">Tipo de Usuário</label>
+              <select
+                v-model="userType"
+                id="userType"
+                class="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+              >
+                <option value="estudante">Estudante</option>
+                <option value="professor">Professor</option>
+                <option value="coordenador">Coordenador</option>
+                <option value="admin">Administrador</option>
+              </select>
             </div>
 
           </div>
