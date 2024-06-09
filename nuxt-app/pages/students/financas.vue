@@ -5,7 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="container mx-auto p-4">
+  <div class="container mx-auto p-4 overflow-hidden shadow-gray-300 shadow-md sm:rounded-lg">
     <h1 class="text-2xl font-bold mb-4">Controle de Propinas</h1>
     <table class="min-w-full bg-white border border-gray-200">
       <thead>
