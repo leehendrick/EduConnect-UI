@@ -55,13 +55,13 @@ const formadores = [
             <table class="min-w-full divide-y divide-gray-300 border-2">
               <thead>
               <tr class="bg-secondary  text-white">
-                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">TEMPO</th>
-                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">ORD</th>
-                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">SEGUNDA</th>
-                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">TERÇA</th>
-                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">QUARTA</th>
-                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">QUINTA</th>
-                <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">SEXTA</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">TEMPO</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">ORD</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">SEGUNDA</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">TERÇA</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">QUARTA</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">QUINTA</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">SEXTA</th>
               </tr>
               </thead>
               <tbody class="divide-y divide-gray-200">
@@ -88,8 +88,8 @@ const formadores = [
           <table class="min-w-full divide-y divide-gray-300 border-2">
             <thead>
             <tr class="bg-secondary  text-white">
-              <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">DISCIPLINA</th>
-              <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">NOME DO PROFESSOR</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">DISCIPLINA</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">NOME DO PROFESSOR</th>
             </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
