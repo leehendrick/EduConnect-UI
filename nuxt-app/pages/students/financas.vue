@@ -9,7 +9,7 @@ definePageMeta({
     <h1 class="text-2xl font-bold mb-4">Controle de Propinas</h1>
     <table class="min-w-full bg-white border border-gray-200">
       <thead>
-      <tr class="w-full bg-gray-100 text-left text-gray-600 uppercase text-sm leading-normal">
+      <tr class="w-full bg-secondary text-left text-white uppercase text-sm leading-normal">
         <th class="py-3 px-4 border-b border-gray-200">Nome do Aluno</th>
         <th class="py-3 px-4 border-b border-gray-200">Curso</th>
         <th class="py-3 px-4 border-b border-gray-200">Data de Pagamento</th>
