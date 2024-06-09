@@ -3,6 +3,8 @@ import { EnvelopeIcon, KeyIcon } from '@heroicons/vue/20/solid'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 
+const router = useRouter()
+
 const title = useState('title')
 definePageMeta({
   layout: 'nolayout',
@@ -20,6 +22,9 @@ const test = async () => {
 
     console.log(response.accessToken); // Exibir a resposta no console para depuração
     localStorage.setItem('token', response.accessToken)
+
+    router.push('/students/dashboard')
+
     // Exibir a mensagem específica no SweetAlert
     await Swal.fire({
       title: "Test",
