@@ -55,9 +55,9 @@ const notas = [
               <table class="min-w-full divide-y divide-gray-300 border-2 mb-5">
                 <thead>
                 <tr class="bg-secondary  text-white">
-                  <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">DISCIPLINAS</th>
-                  <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">MÉDIA</th>
-                  <th scope="col" class="px-3 py-3.5 text-left text-md font-extrabold ">FALTAS</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">DISCIPLINAS</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">MÉDIA</th>
+                  <th scope="col" class="px-3 py-3.5 text-left text-sm font-extrabold ">FALTAS</th>
                 </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-200">
