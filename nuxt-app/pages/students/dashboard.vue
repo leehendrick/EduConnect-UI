@@ -2,31 +2,18 @@
 
 import { ref, onMounted } from 'vue';
 
-import jwt_decode from 'jwt-decode';
-
 const userData = ref(null);
 
 definePageMeta({
   layout: 'students-layout',
 })
 
+
 const stats = [
   { name: 'Total de disciplinas', stat: '10' },
   { name: 'Média geral', stat: '15 V' },
   { name: 'Progresso do ano letivo', stat: '60.23%' },
 ]
-
-
-onMounted(() => {
-  const token = localStorage.getItem('accessToken');
-  if (token) {
-    try {
-      userData.value = jwt_decode(token);
-    } catch (error) {
-      console.error('Invalid token', error);
-    }
-  }
-});
 
 </script>
 
