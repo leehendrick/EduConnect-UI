@@ -23,7 +23,7 @@ const test = async () => {
     console.log(response.accessToken); // Exibir a resposta no console para depuração
     localStorage.setItem('token', response.accessToken)
 
-    router.push('/students/dashboard')
+    await router.push('/students/dashboard')
 
     // Exibir a mensagem específica no SweetAlert
     await Swal.fire({
