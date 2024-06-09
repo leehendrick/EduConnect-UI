@@ -10,8 +10,8 @@ definePageMeta({
     <table class="min-w-full bg-white border border-gray-200">
       <thead>
       <tr class="w-full bg-secondary text-left text-white uppercase text-sm leading-normal">
-        <th class="py-3 px-4 border-b border-gray-200">Nome do Aluno</th>
-        <th class="py-3 px-4 border-b border-gray-200">Curso</th>
+        <th class="py-3 px-4 border-b border-gray-200">Ano lectivo</th>
+        <th class="py-3 px-4 border-b border-gray-200">MÊs</th>
         <th class="py-3 px-4 border-b border-gray-200">Data de Pagamento</th>
         <th class="py-3 px-4 border-b border-gray-200">Valor</th>
         <th class="py-3 px-4 border-b border-gray-200">Status</th>
@@ -19,10 +19,10 @@ definePageMeta({
       </thead>
       <tbody class="text-gray-600 text-sm font-light">
       <tr class="border-b border-gray-200 hover:bg-gray-100">
-        <td class="py-3 px-4 border-b border-gray-200">João Silva</td>
-        <td class="py-3 px-4 border-b border-gray-200">Engenharia</td>
+        <td class="py-3 px-4 border-b border-gray-200">2023/2024</td>
+        <td class="py-3 px-4 border-b border-gray-200">Junho</td>
         <td class="py-3 px-4 border-b border-gray-200">01/05/2024</td>
-        <td class="py-3 px-4 border-b border-gray-200">R$ 1000,00</td>
+        <td class="py-3 px-4 border-b border-gray-200">Kz 26.000,00</td>
         <td class="py-3 px-4 border-b border-gray-200">Pago</td>
       </tr>
       <!-- Adicione mais linhas conforme necessário -->
