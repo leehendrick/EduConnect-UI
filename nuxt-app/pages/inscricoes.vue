@@ -1,10 +1,16 @@
 <script setup lang="ts">
+import InscricaoForm from '~/components/inscricaoForm.vue'
 
+const flag = ref(true);
+const inscricao = () => {
+  flag.value = false
+}
 </script>
 
 <template>
     <Title>Imptel | Inscrições</Title>
-  <div class="container mx-auto px-4 py-8 flex flex-wrap mt-24">
+
+  <div v-if="flag" class="container mx-auto px-4 py-8 flex flex-wrap mt-24">
     <!-- Lado Esquerdo: Cursos e Informações Relevantes -->
     <div class="w-full lg:w-1/2 pr-4 mb-8 lg:mb-0 border-r-2 border-gray-300">
       <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-gray-800">Cursos Disponíveis</h2>
@@ -50,10 +56,12 @@
     <!-- Call to Action -->
     <div class="w-full text-center">
       <p class="text-lg mb-4 mt-5 ">Pronto para inscrever seu filho em um de nossos cursos?</p>
-      <a href="#" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">Inscreva-se agora!</a>
+      <button @click.prevent="inscricao" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">Inscreva agora!</button>
     </div>
   </div>
-
+  <div v-else class="mt-32">
+    <inscricao-form/>
+  </div>
 </template>
 
 <style scoped>
