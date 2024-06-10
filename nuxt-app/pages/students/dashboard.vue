@@ -6,13 +6,14 @@ const userData = ref(null);
 
 definePageMeta({
   layout: 'students-layout',
+  middleware: 'auth'
 })
 
 
 const stats = [
   { name: 'Total de disciplinas', stat: '10' },
   { name: 'Média geral', stat: '15 V' },
-  { name: 'Progresso do ano letivo', stat: '60.23%' },
+  { name: 'Progresso do ano lectivo', stat: '60.23%' },
 ]
 
 </script>
