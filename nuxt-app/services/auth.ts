@@ -7,7 +7,7 @@ interface DecodedToken {
 }
 
 export function login(email: string, senha: string) {
-  return $fetch('/api/login', {
+  return $fetch('http://localhost:4002/api/users/login', {
     method: 'POST',
     body: {email, senha},
   });
