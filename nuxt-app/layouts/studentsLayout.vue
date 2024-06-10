@@ -109,7 +109,7 @@
               <MenuButton class="-m-1.5 flex items-center p-1.5">
                 <span class="sr-only">Open user menu</span>
                 <span class="hidden lg:flex lg:items-center">
-                  <span class="ml-4 text-sm font-semibold leading-6 text-gray-900" aria-hidden="true">{{ userData.nome }}</span>
+                  <span class="ml-4 text-sm font-semibold leading-6 text-gray-900" aria-hidden="true"><span v-if="flag">{{ userData.nome }}</span></span>
                   <ChevronDownIcon class="ml-2 h-5 w-5 text-gray-400" aria-hidden="true" />
                 </span>
               </MenuButton>
@@ -159,14 +159,15 @@ import {
   DocumentTextIcon
 } from '@heroicons/vue/20/solid'
 import { ChevronDownIcon, MagnifyingGlassIcon, PresentationChartBarIcon } from '@heroicons/vue/20/solid'
-import { jwtDecode } from 'jwt-decode'
+import { getUserData } from '~/services/auth.ts'
+import { useUserStore } from '~/stores/user';
+import { storeToRefs } from 'pinia';
+
+const userStore = useUserStore();
+const { userData } = storeToRefs(userStore);
+
 const route = useRoute();
-
-
 const flag = ref(false)
-const reloadPage = () => {
-  window.location.reload();
-};
 
 const navigation = [
   { name: 'Landing-Page', href: '/', icon: HomeIcon, },
@@ -184,19 +185,12 @@ const userNavigation = [
   { name: 'Sign out', href: '#' },
 ]
 
-const userData = ref(null);
-
 const sidebarOpen = ref(false)
 
 onMounted(() => {
-  const token = localStorage.getItem('token');
-  if (token) {
-    try {
-      userData.value = jwtDecode(token);
-      console.log(userData.value)
-    } catch (error) {
-      console.error('Invalid token', error);
-    }
-  }
-});
+  userStore.fetchUserData();
+  setTimeout(() => {
+    flag.value = true;
+  }, 1000)
+})
 </script>
