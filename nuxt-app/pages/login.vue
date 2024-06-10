@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { EnvelopeIcon, KeyIcon } from '@heroicons/vue/20/solid'
-import axios from 'axios'
 import Swal from 'sweetalert2'
+import {useRouter} from 'vue-router';
+import {login, decodedToken} from '~/services/auth'
+
+
+const email = ref('')
+const senha = ref('')
 
 const router = useRouter()
 
@@ -10,37 +15,23 @@ definePageMeta({
   layout: 'nolayout',
 })
 
-const test = async () => {
+const handleSubmit = async () => {
   try {
-    const response = await $fetch('http://localhost:4002/api/users/login', {
-      method: 'POST',
-      body: JSON.stringify({ email: "hendrick.nkuba@gmail.com", senha: "mypass" }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
+    const response  = await login(email.value, senha.value);
+    const token = response.accessToken;
 
-    console.log(response.accessToken); // Exibir a resposta no console para depuração
-    localStorage.setItem('token', response.accessToken)
+    //Armazenando token no localstorage
+    localStorage.setItem('accessToken', token);
+
+    //Descodificando o token
+    const userData = decodedToken(token);
+    console.log('Decoded user data:', userData);
 
     await router.push('/students/dashboard')
-
-    // Exibir a mensagem específica no SweetAlert
-    await Swal.fire({
-      title: "Test",
-      text: `Login feito com sucesso`,
-      icon: "success"
-    });
   } catch (error) {
-    console.error('Erro:', error.response);
-    let err = error.response._data.message
-    // Exibir mensagem de erro no SweetAlert
-    await Swal.fire({
-      title: "Erro",
-      text: `${err}`,
-      icon: "error"
-    });
+    console.log('Login failed:', error)
   }
+
 }
 
 </script>
@@ -56,7 +47,7 @@ const test = async () => {
         </h2>
       </div>
       <div class="bg-white px-6 py-12 sm:rounded-lg sm:px-12">
-        <form class="space-y-6" action="#" method="POST">
+        <form class="space-y-6" @submit.prevent="handleSubmit">
           <div>
             <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
             <div class="relative mt-2 rounded-md shadow-sm">
@@ -69,6 +60,7 @@ const test = async () => {
                 id="email"
                 class="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
                 placeholder="you@example.com"
+                v-model="email"
               />
             </div>
           </div>
@@ -84,6 +76,7 @@ const test = async () => {
                 name="password"
                 id="password"
                 class="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 sm:text-sm sm:leading-6"
+                v-model="senha"
               />
             </div>
           </div>
@@ -107,7 +100,6 @@ const test = async () => {
 
           <div>
             <button
-              @click.prevent="test"
               type="submit"
               class="flex w-full justify-center rounded-md bg-secondary px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
