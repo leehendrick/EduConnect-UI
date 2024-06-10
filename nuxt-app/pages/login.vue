@@ -2,12 +2,12 @@
 import { EnvelopeIcon, KeyIcon } from '@heroicons/vue/20/solid'
 import Swal from 'sweetalert2'
 import {useRouter} from 'vue-router';
-import {login, decodedToken} from '~/services/auth'
-
+import {login, decodedToken, getDataByBi} from '~/services/auth'
+import {navigateTo} from '#app'
 
 const email = ref('')
 const senha = ref('')
-
+const flag = ref(false)
 const router = useRouter()
 
 const title = useState('title')
@@ -27,7 +27,7 @@ const handleSubmit = async () => {
     const userData = decodedToken(token);
     console.log('Decoded user data:', userData);
 
-    await router.push('/students/dashboard')
+    await navigateTo('/students/dashboard');
   } catch (error) {
     console.log('Login failed:', error)
   }
