@@ -1,20 +1,24 @@
 <script setup lang="ts">
 import { EnvelopeIcon, KeyIcon } from '@heroicons/vue/20/solid'
-import Swal from 'sweetalert2'
-import {useRouter} from 'vue-router';
-import {login, decodedToken, getDataByBi} from '~/services/auth'
+import {login, decodedToken} from '~/services/auth'
 import {navigateTo} from '#app'
+import {useAuth} from '~/composable/useAuth'
+import Swal from 'sweetalert2'
 
 const email = ref('')
 const senha = ref('')
-const flag = ref(false)
-const router = useRouter()
 
 const title = useState('title')
 definePageMeta({
   layout: 'nolayout',
 })
-
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+})
 const handleSubmit = async () => {
   try {
     const response  = await login(email.value, senha.value);
@@ -25,9 +29,15 @@ const handleSubmit = async () => {
 
     //Descodificando o token
     const userData = decodedToken(token);
+    const {setUser} = useAuth()
+    setUser(userData.name)
     console.log('Decoded user data:', userData);
 
     await navigateTo('/students/dashboard');
+    await Toast.fire({
+      icon: "success",
+      title: "Bem Vindo"
+    })
   } catch (error) {
     console.log('Login failed:', error)
   }
