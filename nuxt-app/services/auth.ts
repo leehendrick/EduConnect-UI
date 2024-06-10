@@ -6,6 +6,7 @@ interface DecodedToken {
   nome: string;
 }
 
+
 export function login(email: string, senha: string) {
   return $fetch('http://localhost:4002/api/users/login', {
     method: 'POST',
@@ -18,13 +19,24 @@ export function getDataByBi(bi: string){
     method: 'GET'
   });
 }
+
+export function logout() {
+  const router = useRouter();
+  const accessToken = ref<string | null>(localStorage.getItem('accessToken'));
+
+    accessToken.value = null;
+    localStorage.removeItem('accessToken');
+    router.push('/login').then(r => {
+      console.log('EVERYTHING LOOKS FINE')
+    });
+}
 export function decodedToken(token: string): DecodedToken{
   return jwtDecode<DecodedToken>(token);
 }
 
 export function getToken(): string | null {
   if (typeof window !== 'undefined'){
-    return localStorage.getItem('accessToken');
+    return localStorage.getItem('token');
   }
   return null;
 }
