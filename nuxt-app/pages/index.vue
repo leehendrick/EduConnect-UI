@@ -21,25 +21,25 @@
   ])
   const quandroHonra = ref([
     {
-      nomeAluno: 'Aline Lourenço',
-      curso: 'Eléctronica e Telecomunicações',
-      classe: '10ª classe',
-      disciplinas: 'Matemática, Física',
-      img: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cHJvZmlsZXx8fHx8fDE3MTUxNzEyOTA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080',
-    },
-    {
-      nomeAluno: 'Claudeth Luvumbua',
-      curso: 'Electrônica e Telecomunicações',
+      nomeAluno: 'Creusia Lidia',
+      curso: 'Informática',
       classe: '12ª classe',
       disciplinas: 'Matemática, Física',
-      img: 'https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cHJvZmlsZXx8fHx8fDE3MTUxNzExNTQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080'
+      img:'/Creusia Lidia.jpeg',
     },
     {
-      nomeAluno: 'Vilma Muafunga',
+      nomeAluno: 'Orquidea Chingola',
+      curso: 'Informática',
+      classe: '12ª classe',
+      disciplinas: 'Matemática, Física',
+      img: '/Orquidea Chingola.jpeg'
+    },
+    {
+      nomeAluno: 'Eliandra Gaspar',
       curso: 'Informática',
       classe: '12ª classe',
       disciplinas: 'Química, Física',
-      img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cHJvZmlsZSxzdHVkZW50fHx8fHx8MTcxNTE3MDk3NQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080'
+      img: '/Eliandra Gaspar.jpeg'
     }
   ])
 
